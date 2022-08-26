@@ -10,14 +10,14 @@ import Result from '../components/Result'
 const Home = () => {
 
     const [query, setQuery] = useState("SELECT * FROM customers;");
-    const [AllQueries, setAllQueries] = useState({
-        saved: ["SELECT * FROM customers;", "SELECT companyName, contactName, city, country FROM customers;", "SELECT * FROM territories"],
+    const [queries, setAllQueries] = useState({
+        saved: ["SELECT * FROM customers;", "SELECT companyName, contactName FROM customers;", "SELECT * FROM territories"],
         outputData: [],
     })
 
     const contextValue = useMemo(
-        () => ({ query, setQuery, AllQueries, setAllQueries }),
-        [query, AllQueries]
+        () => ({ query, setQuery, queries, setAllQueries }),
+        [query, queries]
     );
 
     return (
