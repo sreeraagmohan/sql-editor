@@ -7,29 +7,25 @@ import "../App.scss";
 const Result = () => {
     const { queries } = useContext(AppContext);
     return (
-        <div className='query-results'>
+        <div className="results-wrapper">
             {queries.outputData.length > 0 ? (
                 <>
-                    <div className='tab-bar'>
-                        <span className={"tabs active"}>
-                            Output
-                        </span>
-
-                    </div>
-                    <div className='query-details'>
-                        <p className='text-2'>
+                    <div className="row justify-content-between">
+                        <div className="col results-text">
                             <span>{queries.outputData.length} rows in set</span>
-                        </p>
-
+                        </div>
+                        <div className="col text-end">
+                            <div className="table-icons">
+                                <i className="bi-search"></i>
+                                <i className="bi-filter"></i>
+                                <i className="bi-download"></i>
+                            </div>
+                        </div>
                     </div>
                     <Table result={queries.outputData}></Table>
                 </>
             ) : (
-
-                <div className='placeholder-text'>
-                    <i className="bi-play"></i>
-                    <p>Output</p>
-                </div>
+                <></>
             )}
         </div>
     );

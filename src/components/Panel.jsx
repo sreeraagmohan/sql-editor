@@ -52,21 +52,30 @@ const Panel = () => {
     };
 
     return (
-        <div className='panel'>
-            <div className='btn primary-btn'>
-                <button onClick={() => runQuery()} >
-                    <i className="bi-play"></i>Run
-                </button>
+        <div className="panel">
+            <div className="btn-wrapper">
+                <div className="btn primary-btn">
+                    <a onClick={() => runQuery()} >
+                        <i className="bi-play"></i>
+                    </a>
+                </div>
+                Run
             </div>
-            <div className='btn secondary-btn'>
-                <button onClick={() => saveQuery()}>
-                    <i className="bi-save"></i>Save
-                </button>
+            <div className="btn-wrapper">
+                <div className="btn secondary-btn">
+                    <a onClick={() => saveQuery()}>
+                        <i className="bi-save"></i>
+                    </a>
+                </div>
+                Save
             </div>
-            <div className='btn alert-btn'>
-                <button onClick={() => clearQuery()} >
-                    <i className="bi-trash"></i>Clear
-                </button>
+            <div className="btn-wrapper">
+                <div className="btn alert-btn">
+                    <a onClick={() => clearQuery()} >
+                        <i className="bi-trash"></i>
+                    </a>
+                </div>
+                Clear
             </div>
         </div>
     )

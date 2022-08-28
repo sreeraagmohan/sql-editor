@@ -23,12 +23,12 @@ const Home = () => {
     return (
         <div >
             <AppContext.Provider value={contextValue}>
-                <div>
+                <div className="home-wrapper">
                     <div className="row">
-                        <div className="col-md-3">
+                        <div className="col-md-2 sidebar">
                             <Sidebar />
                         </div>
-                        <div className="col-md-9 col-12 editor-area">
+                        <div className="col workspace-wrapper">
                             <Terminal />
                             <Result />
                         </div>

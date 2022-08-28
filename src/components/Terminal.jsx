@@ -13,18 +13,17 @@ const Terminal = () => {
         }
     }
     return (
-        <div className="editor">
+        <div className="editor-wrapper">
             <div className="row">
-                <div className="col-md-8 col-lg-9 col-xl-10 col-12 no-gutters">
-                    <textarea 
+                <div className="col">
+                    <p className="editor-header">
+                        Select a query to start
+                    </p>
+                    <textarea
+                        className="editor-textarea"
                         value={query}
                         onChange={handleTextAreaChange}
                     />
-                    <p style={{ fontSize: "0.8rem" }} className="text-2 pt-3 mb-0">
-                        <strong>Select a query to start.</strong>
-                    </p>
-                </div>
-                <div className="col-md-4 col-lg-3 col-xl-2">
                     <Panel />
                 </div>
             </div>

@@ -5,23 +5,23 @@ import "../App.scss";
 const Query = () => {
 
     const { setQuery, queries } = useContext(AppContext);
-    const [list, setList] = useState(queries['saved']); 
+    const [list, setList] = useState(queries["saved"]);
 
     useEffect(() => {
-        setList(queries['saved']);
+        setList(queries["saved"]);
     }, [queries]);
 
     const QueryList = (list) => {
         return list.map((query, index) => {
-            return <div key={index} className='query'>
+            return (<div key={index} className="query-item">
                 <code onClick={() => setQuery(query)}>{query}</code>
-            </div>
+            </div>)
         })
 
     }
 
     return (
-        <div className='query-box'>
+        <div className="query-wrapper">
             {QueryList(list)}
         </div>
     )
