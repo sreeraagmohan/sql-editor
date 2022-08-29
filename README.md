@@ -1,6 +1,7 @@
 # SQL Editor
 
 A web-based application capable of running SQL queries and displaying the results. 
+[Live Demo](https://sreeraag-sql-editor.netlify.app/#!)
 
 ### Features
 
@@ -22,6 +23,10 @@ A web-based application capable of running SQL queries and displaying the result
 - App loads in 403ms and scores 100% on GTMetrix and highly in Lighthouse reports
 - Highly accessible: app scores 96% on Lighthouse reports. Labels have been added for support on screen-readers
 - Large, easy-to-use textarea and buttons. 
+
+### Reports
+![Lighthouse](./src/screenshots/Lighthouse.png)
+![GTMetrix](./src/screenshots/GTMetrix.png)
 
 Developed by Sreeraag Mohan
 
