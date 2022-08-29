@@ -21,7 +21,7 @@ const Terminal = () => {
                     </p>
                     <textarea
                         className="editor-textarea"
-                        label="editor"
+                        aria-label="Query Editor"
                         value={query}
                         onChange={handleTextAreaChange}
                     />
