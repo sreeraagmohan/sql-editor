@@ -55,7 +55,7 @@ const Panel = () => {
         <div className="panel">
             <div className="btn-wrapper">
                 <div className="btn primary-btn">
-                    <a href="#!" onClick={() => runQuery()} >
+                    <a aria-label="Run Query" href="#!" onClick={() => runQuery()} >
                         <i className="bi-play"></i>
                     </a>
                 </div>
@@ -63,7 +63,7 @@ const Panel = () => {
             </div>
             <div className="btn-wrapper">
                 <div className="btn secondary-btn">
-                    <a href="#!" onClick={() => saveQuery()}>
+                    <a aria-label="Save Query" href="#!" onClick={() => saveQuery()}>
                         <i className="bi-save"></i>
                     </a>
                 </div>
@@ -71,7 +71,7 @@ const Panel = () => {
             </div>
             <div className="btn-wrapper">
                 <div className="btn alert-btn">
-                    <a href="#!" onClick={() => clearQuery()} >
+                    <a aria-label="Clear Query" href="#!" onClick={() => clearQuery()} >
                         <i className="bi-trash"></i>
                     </a>
                 </div>
