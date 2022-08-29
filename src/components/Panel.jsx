@@ -55,7 +55,7 @@ const Panel = () => {
         <div className="panel">
             <div className="btn-wrapper">
                 <div className="btn primary-btn">
-                    <a onClick={() => runQuery()} >
+                    <a href="Javascript;" onClick={() => runQuery()} >
                         <i className="bi-play"></i>
                     </a>
                 </div>
@@ -63,7 +63,7 @@ const Panel = () => {
             </div>
             <div className="btn-wrapper">
                 <div className="btn secondary-btn">
-                    <a onClick={() => saveQuery()}>
+                    <a href="Javascript;" onClick={() => saveQuery()}>
                         <i className="bi-save"></i>
                     </a>
                 </div>
@@ -71,7 +71,7 @@ const Panel = () => {
             </div>
             <div className="btn-wrapper">
                 <div className="btn alert-btn">
-                    <a onClick={() => clearQuery()} >
+                    <a href="Javascript;" onClick={() => clearQuery()} >
                         <i className="bi-trash"></i>
                     </a>
                 </div>
