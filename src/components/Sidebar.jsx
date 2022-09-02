@@ -9,8 +9,8 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <h5 className="sidebar-title">
-                <i className="bi-clock-history"></i>
-                Recent Queries
+                <i className="bi-hdd"></i>
+                Saved Queries
             </h5>
             {queries && <Query />}
         </div>
